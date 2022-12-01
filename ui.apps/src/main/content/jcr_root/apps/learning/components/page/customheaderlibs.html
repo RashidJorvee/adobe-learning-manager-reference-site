@@ -9,11 +9,42 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */-->
-
+<script src="https://assets.adobedtm.com/01296dd00565/cfcd1b4053aa/launch-36bd2c207424-development.min.js" async></script>
 <sly data-sly-use.configModel="com.adobe.learning.core.models.GlobalConfigurationModel"/>
 <meta name="cp-config" content="${configModel.config}" />
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
   <sly
-    data-sly-call="${clientlib.all @ categories='learning.base'}"
+          data-sly-call="${clientlib.all @ categories='learning.base'}"
   />
 </sly>
+
+<script>
+var digitalData = {};
+
+
+digitalData = {
+	page: {
+		pageInfo: {
+			pageName: "",
+			pageURL: "",
+			country: "IN",
+			language: "en",
+			server: "",
+		}
+
+	},
+	user: {
+		profile: {
+			username: "",
+			loggedIn: "true",
+		}
+	}
+}
+
+digitalData.page.pageInfo.pageName = document.title;
+digitalData.page.pageInfo.pageURL = window.location.href;
+digitalData.page.pageInfo.server = window.location.host;
+
+</script>
+
+
