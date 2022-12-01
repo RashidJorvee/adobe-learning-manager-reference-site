@@ -34,7 +34,7 @@ digitalData = {
 	},
 	user: {
 		profile: {
-			username: "Rashid",
+			username: "14923806",
 			loggedIn: "true",
 			binUserId: "a3493573-807a-4581-83ea-a478348c7e9a",
 			roles: [
@@ -49,8 +49,9 @@ digitalData = {
 	},
 	course: {
 		courseInfo: {
-			courseId: "3444516",
-			title: "Psychological Safety Behaviours"
+			courseId: "3444526",
+			title: "Psychological Safety Behaviours",
+			category: "General",
 		}
 	}
 
@@ -59,7 +60,19 @@ digitalData = {
 digitalData.page.pageInfo.pageName = document.title;
 digitalData.page.pageInfo.pageURL = window.location.href;
 digitalData.page.pageInfo.server = window.location.host;
+if (top.location.pathname.includes('course')) {
+	var courseId = window.location.href.split(":").pop().slice(0,7);
+	var catName = 'General';
+	digitalData.course.courseInfo.courseId = courseId;
+	digitalData.course.courseInfo.title = document.getElementsByClassName('PrimeTrainingOverviewHeader_title__DQR7h')[0].getAttribute('id');
 
+	if(courseId == 3444422) {
+		catName = 'Lightroom';
+	} else if(courseId == 3444420) {
+		catName = 'After Effects';
+	}
+	digitalData.course.courseInfo.category = catName;
+}
 </script>
 
 
