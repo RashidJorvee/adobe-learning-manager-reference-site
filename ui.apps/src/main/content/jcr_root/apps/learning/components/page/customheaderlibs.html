@@ -60,18 +60,28 @@ digitalData = {
 digitalData.page.pageInfo.pageName = document.title;
 digitalData.page.pageInfo.pageURL = window.location.href;
 digitalData.page.pageInfo.server = window.location.host;
-if (top.location.pathname.includes('course')) {
-	var courseId = window.location.href.split(":").pop().slice(0,7);
-	var catName = 'General';
-	digitalData.course.courseInfo.courseId = courseId;
-	digitalData.course.courseInfo.title = document.getElementsByClassName('PrimeTrainingOverviewHeader_title__DQR7h')[0].getAttribute('id');
+window.addEventListener("load", loadCourseData);
 
-	if(courseId == 3444422) {
-		catName = 'Lightroom';
-	} else if(courseId == 3444420) {
-		catName = 'After Effects';
+function loadCourseData(){
+	if (top.location.pathname.includes('course')) {
+		var courseId = window.location.href.split(":").pop().slice(0,7);
+		var catName = 'General';
+		digitalData.course.courseInfo.courseId = courseId;
+
+		if(courseId == 3444422) {
+			catName = 'Lightroom';
+		} else if(courseId == 3444420) {
+			catName = 'After Effects';
+		} else if(courseId == 3444425) {
+			catName = 'LMS Basics';
+		} else if(courseId == 3444418) {
+			catName = 'Photoshop';
+		} else if(courseId == 3444421) {
+			catName = 'Mastering Illustrator';
+		}
+		digitalData.course.courseInfo.category = catName;
+		digitalData.course.courseInfo.title = document.getElementsByClassName('PrimeTrainingOverviewHeader_title__DQR7h')[0].getAttribute('id');
 	}
-	digitalData.course.courseInfo.category = catName;
 }
 </script>
 
