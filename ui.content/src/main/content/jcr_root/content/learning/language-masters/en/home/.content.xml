@@ -4,11 +4,17 @@
     <jcr:content
         cq:lastModified="{Date}2022-04-19T18:39:04.059+05:30"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-12-02T10:29:33.595Z"
+        cq:lastReplicated_publish="{Date}2022-12-02T10:29:33.595Z"
+        cq:lastReplicatedBy="mohammadr@adobe.com"
+        cq:lastReplicatedBy_publish="mohammadr@adobe.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
         cq:template="/conf/learning/settings/wcm/templates/page-content1"
         jcr:primaryType="cq:PageContent"
-        id="learning-body"
         jcr:title="Home"
-        sling:resourceType="learning/components/page">
+        sling:resourceType="learning/components/page"
+        id="learning-body">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="learning/components/container"
@@ -50,7 +56,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="learning/components/text"
                                 id="categories-headline"
-                                text="&lt;p style=&quot;text-align: center;&quot;>Discover SecurFinancial&lt;/p>&#xd;&#xa;"
+                                text="&lt;p style=&quot;text-align: center;&quot;>Discover Learnify&lt;/p>&#xa;"
                                 textIsRich="true"/>
                             <text_371530116
                                 jcr:created="{Date}2022-04-12T10:02:35.792+05:30"
@@ -60,7 +66,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="learning/components/text"
                                 id="categories-desc"
-                                text="&lt;p style=&quot;text-align: center;&quot;>Explore and learn from a diverse set of trainings on SecurFinancial products that empower excellence. Select among hundreds of courses that cater to your job role.&lt;/p>&#xd;&#xa;"
+                                text="&lt;p style=&quot;text-align: center;&quot;>Explore and learn from a diverse set of trainings on Learnify products that empower excellence. Select among hundreds of courses that cater to your job role.&lt;/p>"
                                 textIsRich="true"/>
                             <categories_151943519
                                 jcr:created="{Date}2022-04-10T23:25:19.548+05:30"
@@ -75,7 +81,7 @@
                                         catalogs="LinkedIn Learning,Digital Marketing"
                                         description="Take advantage of strong computational tools employing unique financial management strategies that keep your accounting worries at bay."
                                         fileReference="/content/dam/learning/site/explore/Accountant.png"
-                                        headline="SecurFinancial For Accountants"
+                                        headline="Learnify For Accountants"
                                         products="Accounting,Adapt to change"
                                         tags="tags1"/>
                                     <item1
@@ -83,7 +89,7 @@
                                         catalogs="Default Catalog"
                                         description="Utilize state of the art administrative management tools providing unique solutions for your information management needs."
                                         fileReference="/content/dam/learning/site/explore/Admin.png"
-                                        headline="SecurFinancial for Admins"
+                                        headline="Learnify for Admins"
                                         products="Adobe Advantage,Abstract Skill"
                                         tags="tags1"/>
                                     <item2
@@ -91,7 +97,7 @@
                                         catalogs="Default Catalog,LinkedIn Learning,Digital Marketing"
                                         description="Reap the benefits of award-winning auditing tools providing robust solutions for your compliance assessment and recordkeeping needs."
                                         fileReference="/content/dam/learning/site/explore/Auditor.png"
-                                        headline="SecurFinancial for Auditors"
+                                        headline="Learnify for Auditors"
                                         products="Accounting"
                                         tags="tags1"/>
                                     <item3
@@ -99,7 +105,7 @@
                                         catalogs="catalog1,catalog2"
                                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                                         fileReference="/content/dam/learning/site/explore/Accountant.png"
-                                        headline="SecurFinancial For Accountants"
+                                        headline="Learnify For Accountants"
                                         products="skill1,skill2"
                                         tags="tags1"/>
                                     <item4
@@ -107,7 +113,7 @@
                                         catalogs="catalog1"
                                         description="Utilize state of the art administrative management tools providing unique solutions for your information management needs."
                                         fileReference="/content/dam/learning/site/explore/Admin.png"
-                                        headline="SecurFinancial for Admins"
+                                        headline="Learnify for Admins"
                                         products="skill1,skill2"
                                         tags="tags1"/>
                                     <item5
@@ -115,7 +121,7 @@
                                         catalogs="catalog1"
                                         description="Reap the benefits of award-winning auditing tools providing robust solutions for your compliance assessment and recordkeeping needs."
                                         fileReference="/content/dam/learning/site/explore/Auditor.png"
-                                        headline="SecurFinancial for Auditors"
+                                        headline="Learnify for Auditors"
                                         products="skill1,skill2"
                                         tags="tags1"/>
                                 </categories>
@@ -138,7 +144,7 @@
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="learning/components/text"
-                            text="&lt;p style=&quot;text-align: center;&quot;>News on SecurFinancial&lt;/p>&#xa;"
+                            text="&lt;p style=&quot;text-align: center;&quot;>News on Learnify&lt;/p>&#xa;"
                             textIsRich="true"/>
                         <carousel
                             jcr:created="{Date}2022-03-13T13:45:26.165+05:30"
@@ -149,8 +155,8 @@
                             sling:resourceType="learning/components/carousel"
                             autopauseDisabled="false"
                             autoplay="false"
-                            id="home-carousel-cont"
-                            delay="5000">
+                            delay="5000"
+                            id="home-carousel-cont">
                             <teaser
                                 cq:panelTitle="1"
                                 jcr:created="{Date}2022-03-13T11:19:10.496+05:30"
@@ -175,11 +181,11 @@
                             </teaser>
                             <item_1647150560093
                                 cq:panelTitle="2"
-                                jcr:description="&lt;p>Starting March 2022, SecurFinancial introduces hybrid learning experience for all professionals looking for live training solutions.&lt;br />&lt;/p>"
+                                jcr:description="&lt;p>Starting March 2022, Learnify introduces hybrid learning experience for all professionals looking for live training solutions.&lt;br />&lt;/p>"
                                 jcr:lastModified="{Date}2022-03-13T11:21:34.229+05:30"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
-                                jcr:title="SecurFinancial Academy introduces hybrid learning experience"
+                                jcr:title="Learnify Academy introduces hybrid learning experience"
                                 sling:resourceType="learning/components/teaser"
                                 actionsEnabled="true"
                                 descriptionFromPage="false"
@@ -202,9 +208,9 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="learning/components/newssection"
                             section1Description="Videos, webinars, and educational programs to upgrade your skills and knowledge."
-                            section1Title="SecurFinancial Educational Resources"
                             section1Link="https://www.adobe.com"
-                            section2Description="Hundreds of courses covering every feature of SecurFinancial products ensure that you learn well and make the most of our products."
+                            section1Title="Learnify Educational Resources"
+                            section2Description="Hundreds of courses covering every feature of Learnify products ensure that you learn well and make the most of our products."
                             section2Link="https://www.adobe.com"
                             section2Title="Collection of Courses, Certificates…"
                             section3Description="Read on to know more about how we started and how the academy empowers millions to succeed in what they do every day."
@@ -218,7 +224,6 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="learning/components/catalog"
                             durationFilter="true"
-                            tagsFilter="true"
                             formatFilter="true"
                             priceFilter="false"
                             showCatalogFilter="true"
@@ -227,6 +232,7 @@
                             skillsFilter="true"
                             skillsLevelFilter="true"
                             statusFilter="false"
+                            tagsFilter="true"
                             typeFilter="true"/>
                     </container_2>
                 </container>
