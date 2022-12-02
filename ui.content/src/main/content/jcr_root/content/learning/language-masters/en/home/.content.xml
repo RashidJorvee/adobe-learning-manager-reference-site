@@ -165,7 +165,7 @@
                                 jcr:lastModified="{Date}2022-03-13T14:13:18.546+05:30"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
-                                jcr:title="SecurFinancial Academy introduces hybrid learning experience"
+                                jcr:title="Learnify Academy introduces hybrid learning experience"
                                 sling:resourceType="learning/components/teaser"
                                 actionsEnabled="true"
                                 descriptionFromPage="false"
@@ -175,7 +175,7 @@
                                 <actions jcr:primaryType="nt:unstructured">
                                     <item0
                                         jcr:primaryType="nt:unstructured"
-                                        link="https://www.google.com"
+                                        link="/content/learning/language-masters/en/learning.html"
                                         text="Find out more"/>
                                 </actions>
                             </teaser>
@@ -195,7 +195,7 @@
                                 <actions jcr:primaryType="nt:unstructured">
                                     <item0
                                         jcr:primaryType="nt:unstructured"
-                                        link="https://www.google.com"
+                                        link="/content/learning/language-masters/en/learning.html"
                                         text="Find out more"/>
                                 </actions>
                             </item_1647150560093>
