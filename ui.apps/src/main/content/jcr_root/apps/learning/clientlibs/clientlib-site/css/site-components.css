@@ -1563,3 +1563,8 @@ body.anonymous .cmp-teaser--secure .cmp-teaser__action-container {
     text-align: unset;
   }
 }
+
+#btnPurchaseCourse {
+    background-color: #0054b6;
+    color: #ffffff;
+}

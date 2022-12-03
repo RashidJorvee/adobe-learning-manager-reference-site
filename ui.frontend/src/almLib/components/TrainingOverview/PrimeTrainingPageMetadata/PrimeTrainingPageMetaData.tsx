@@ -567,12 +567,17 @@ const PrimeTrainingPageMetaData: React.FC<{
             <button
               className={`almButton primary ${styles.commonButton}`}
               onClick={handleEnrollment}
-              disabled={!isSeatAvailable || hasEnrollmentDeadlinePassed}
+              disabled={!hasEnrollmentDeadlinePassed}
             >
               {actionText}
             </button>
             {enrollmentDeadlinePassedText}
             {seatsAvailableText}
+            <br /><a href="/content/learning/language-masters/en/payment.html">
+                <button className={`almButton primary ${styles.commonButton}`}>
+                {`Purchase this course`}
+                </button>
+            </a>
           </>
         )}
         {(action === "start" ||
