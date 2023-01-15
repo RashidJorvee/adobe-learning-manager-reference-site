@@ -37,6 +37,7 @@ digitalData = {
 			username: "14923806",
 			loggedIn: "true",
 			binUserId: "a3493573-807a-4581-83ea-a478348c7e9a",
+			companyId: "218",
 			roles: [
 				"Learner",
 				"Admin",
@@ -50,17 +51,25 @@ digitalData = {
 	course: {
 		courseInfo: {
 			courseId: "3444526",
-			title: "Psychological Safety Behaviours",
+			title: "Fundamentals of Photo Editing using Adobe Lightroom",
 			category: "",
 		}
-	}
-
+	},
+	utm: {
+	  source: ""
+    }
 }
 
 digitalData.page.pageInfo.pageName = document.title;
 digitalData.page.pageInfo.pageURL = window.location.href;
 digitalData.page.pageInfo.server = window.location.host;
 window.addEventListener("load", loadCourseData);
+window.addEventListener("load", loadUtmSource);
+
+function loadUtmSource() {
+  const params = Object.fromEntries(new URLSearchParams(window.location.search).entries());
+  digitalData.utm.source = params.source;
+}
 
 function loadCourseData(){
 	if (top.location.pathname.includes('course')) {
@@ -86,5 +95,3 @@ function loadCourseData(){
 	}
 }
 </script>
-
-

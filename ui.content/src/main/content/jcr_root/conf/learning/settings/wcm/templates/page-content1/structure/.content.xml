@@ -45,7 +45,7 @@
                             jcr:lastModified="{Date}2022-02-19T16:39:21.752+05:30"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="Welcome to SecurFinancial Academy"
+                            jcr:title="Welcome to vLearn Academy"
                             sling:resourceType="learning/components/teaser"
                             actionsEnabled="false"
                             alt="Alt Text"
@@ -58,7 +58,7 @@
                             titleFromPage="false"/>
                         <item_1645268722526
                             cq:panelTitle="2"
-                            jcr:description="&lt;p>Welcome to SecurFinancial Academy. Browse through a wide range of courses available at your fingertips.&lt;/p>&#xd;&#xa;"
+                            jcr:description="&lt;p>Welcome to vLearn Academy. Browse through a wide range of courses available at your fingertips.&lt;/p>&#xd;&#xa;"
                             jcr:lastModified="{Date}2022-02-19T16:43:14.125+05:30"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
@@ -78,7 +78,7 @@
                             jcr:lastModified="{Date}2022-02-19T16:47:16.044+05:30"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="Welcome to SecurFinancial Academy"
+                            jcr:title="Welcome to vLearn Academy"
                             sling:resourceType="learning/components/teaser"
                             actionsEnabled="false"
                             altValueFromDAM="true"
